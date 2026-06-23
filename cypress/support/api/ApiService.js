@@ -33,7 +33,7 @@ class ApiService {
 
   // Dispara a requisição e salva a resposta nativamente no Cypress
   enviarRequisicao() {
-    cy.request(this.requestConfig).as('apiResponse');
+    cy.api(this.requestConfig).as('apiResponse');
   }
 }
 
